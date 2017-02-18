@@ -1,0 +1,15 @@
+<%= form_tag({ :controller => :start_end_date, :action => 'update_end', :tab => 'end'},
+             :method => :post, :id => "form_end_date") do %>
+
+    <fieldset class="box tabular">
+
+      <%= @statuses.find_each do |status| %>
+          <p>
+            <label><%=  status.name %></label>
+            <%= check_box_tag 'end_settings['+ status.id.to_s + ']', status.id,
+                              !(@end_dates.find_by(status_id: status.id).nil?) %>
+          </p>
+      <% end %>
+    </fieldset>
+    <%= submit_tag l(:button_apply) %>
+<% end %>

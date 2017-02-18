@@ -1,0 +1,9 @@
+<h2><%= l(:label_auto_date_main) %></h2>
+
+<% auto_date_tabs = [{:name => 'start', :partial => 'start', :label => :label_start_date_status_fields},
+                  {:name => 'end', :partial => 'end', :label => :label_end_date_status_fields}
+]   %>
+
+<%  auto_date_tabs.push({:name => 'hidden', :partial => 'hidden', :label => :label_auto_date_visibility}) if params[:hidden] %>
+
+<%= render_tabs auto_date_tabs %>

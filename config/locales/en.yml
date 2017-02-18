@@ -1,0 +1,5 @@
+en:
+  label_start_date_status_fields: Status start task
+  label_end_date_status_fields: Status end task
+  label_auto_date_main: Settings automatically stamped the start and end task
+  label_auto_date: Auto date plugin

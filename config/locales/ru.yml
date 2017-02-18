@@ -1,0 +1,5 @@
+ru:
+  label_start_date_status_fields: Статусы начала задачи
+  label_end_date_status_fields: Статусы закрытия задачи
+  label_auto_date_main: Настроки автоматического проставления даты начала и окончания задач
+  label_auto_date: Auto date
